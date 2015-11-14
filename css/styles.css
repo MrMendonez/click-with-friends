@@ -1,8 +1,13 @@
 /* Styles for Click with Friends */
 
-.centerfy img {
-    margin: 0 auto;
+body {
+font-family: 'Shadows Into Light', cursive;
 }
-.centerfy {
-    text-align: center;
+
+p {
+  font-size: 200%;
+}
+
+.smaller-font {
+  font-size: 150%;
 }
