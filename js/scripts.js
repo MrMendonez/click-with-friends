@@ -1,8 +1,12 @@
 // scripts for click with friends game
 
+var decTimer;
+
 function startTimer(){
-  decTimer = setInterval(myTimer, 1000);
+  decTimer = setInterval(timer, 1000);
 };
+
+document.getElementById("startButton").addEventListener("click", startTimer);
 
 var secondsLeft = 20;
 
@@ -28,9 +32,11 @@ function counter() {
   document.getElementById("clickTotal").innerHTML = count;
 }
 
-for(i = 0; i < clickableImages.length; i++){
-  documentclickableImages[i].addEventListener("click", counter); 
+for(i = 0; i < clickableImages.length; i++) {
+  clickableImages[i].addEventListener("click", counter); 
 }
+
+  
 
 // from shamoon's demo
 
