@@ -12,6 +12,7 @@ function startTimer(){
   decTimer = setInterval(timer, 1000);
   for (var i = 0; i < clickableImages.length; i++) {
     clickableImages[i].setAttribute("data-clickable", "true");
+    document.getElementById("startButton").setAttribute("class", "btn btn-danger btn-block center-block");
   }
 };
 
