@@ -34,9 +34,9 @@ function gameOver() {
   if (count === 0) {
     alert("You didn't click any charcters. You needed to click on all 20 characters. You lose!")
   } else if (count === 1) {
-    alert("You clicked " + count + " character. You needed to click on 19 more. You lose!")
+    alert("You clicked " + count + " character. You need 19 more. You lose!")
   } else {
-    alert("You clicked on " + count + " characters. You needed to click on " + (20 - count) + " more. You lose!")
+    alert("You clicked on " + count + " characters. You need " + (20 - count) + " more. You lose!")
   }
   clearInterval(decTimer);
 };
@@ -51,7 +51,9 @@ function counter() {
   document.getElementById("clickTotal").innerHTML = count;
   if (count === 20) {
     alert("You clicked all " + count + " characters with " + secondsLeft + " seconds left to spare! You won! Congratulations! =)")
+    alert("Now, can you do it faster?")
     clearInterval(decTimer);
+    location.reload();
   }
 };
 
