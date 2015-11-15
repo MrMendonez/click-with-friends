@@ -13,17 +13,19 @@ function startTimer(){
   decTimer = setInterval(timer, 1000);
 };
 
-
 function timer() {
   if(secondsLeft > 0) {
     document.getElementById("time").innerHTML = secondsLeft-=1;
   } else {
-      document.getElementById("timeLine").innerHTML = "Your time is up.";
-      document.getElementById("timeLine").className = "change";
+      timesUp();
       gameOver();
-      clearInterval(decTimer);
+      location.reload();
   }
 };
+
+function timesUp() {
+  alert("Your time is up!");
+}
 
 function gameOver() {
   if (count === 20) {
