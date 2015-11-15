@@ -7,124 +7,123 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-  <header>
-      <div class="container">
-        <div class = "col-md-12">
-          <br />
-          <h1 class = "text-center">C&middot;l&middot;i&middot;c&middot;k w&middot;i&middot;t&middot;h</h1>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Friends_logo.svg/1000px-Friends_logo.svg.png" width = "300px" class = "img-responsive center-block">
-        </div>
-      </div>
+  <header class="container">
+    <div class-"row">
+      <div class = "col-md-6">
+        <br />
+        <h1 class = "text-center">C&middot;l&middot;i&middot;c&middot;k w&middot;i&middot;t&middot;h</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Friends_logo.svg/1000px-Friends_logo.svg.png" width = "300px" class = "img-responsive center-block">
+        <p class = "text-center smaller-font">You have 20 seconds to click as many Friends' characters as you can!</p>
+        <br />
+      </div> <!-- end col-md-6 -->
+      <div class="col-md-3">
+        <br />
+        <br />
+        <button type="button" id="startButton" class="btn btn-success center-block">Start</button>
+        <p class="text-center">Time:</p>
+        <span>
+          <p  id="time" class="text-center larger-font">20</p>
+        </span>
+      </div> <!-- end col-md-3 -->
+      <div class="col-md-3">
+        <br />
+        <br />
+        <p class="text-center larger-font">Click Count:</p>
+        <p id="clickTotal" class="text-center larger-font">0</p>
+      </div> <!-- end col-md-6 -->
+    </div> <!-- end header row -->
   </header>
   <main class = "container">
     <div class = "row">
-    <br />
-    <br />
-      <p class = "text-center smaller-font">You have 20 seconds to click as many Friends' characters as you can!</p>
-    </div>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="http://www.neontommy.com/sites/default/files/Rachel-Green-Friends-tv-characters-5385851-460-346.jpg?1368427109" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Rachel</p>
+      </div>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="http://friendsshow.synthasite.com/resources/Monica%20Friends.jpg" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Monica</p>
+      </div>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="http://images5.fanpop.com/image/photos/31400000/Phoebe-Buffay-phoebe-buffay-31435075-685-480.jpg" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Phoebe</p>
+      </div>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="http://www.fm104.ie/getmedia/aabeebb9-9815-45db-bab9-cc787f059b86/33-of-the-most-memorable-ross-geller-moments-on-friends-34.jpg" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Ross</p>
+      </div>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="http://images5.fanpop.com/image/photos/30700000/Chandler-Bing-chandler-bing-30704004-644-444.png" class = "img-circle count-click img-responsive circle center-block" width="115px">
+        <p class = "text-center smaller-font">Chandler</p>
+      </div>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="https://cdn1.lockerdome.com/uploads/e0a6d00c20355ddf9e80f4eec0299d482843bff2ce470143cf386a7863cbd0a0_large" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Joey</p>
+      </div>
+    </div> <!-- end 1st row -->
     <div class = "row">
-      <div class = "col-md-12">
-        <section class="panel panel-primary">
-          <button type="button" id="startButton" class="btn btn-success center-block">Start</button>
-          <p class="text-center">Time:</p>
-          <span>
-            <p  id="time" class="text-center">20</p>
-          </span>
-          <p class="text-center">Click Count:</p>
-          <p id="clickTotal" class="text-center">0</p>
-        </section>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="http://i2.wp.com/okmagazine.com/wp-content/uploads/2014/09/gunther-friends-best-quotes.jpg" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Gunther</p>
       </div>
-    </div>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="http://showbizgeek.com/wp-content/uploads/2013/01/jack-geller.jpg" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Jack</p>
+      </div>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="http://braindamaged.fr/wp-content/uploads/2014/05/Judy_Geller_Friends.jpg" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Judy</p>
+      </div>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="http://i0.wp.com/www.readyfor.tv/wp-content/uploads/2015/01/bonus.jpg" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Janice</p>
+      </div>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="http://www.wearysloth.com/Gallery/ActorsS/tve15906-19950928-444.jpg" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Carol</p>
+      </div>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="http://www.wearysloth.com/Gallery/ActorsH/tve7753-19950112-444.jpg" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Susan</p>
+      </div>
+    </div> <!-- end 2nd row -->
     <div class = "row">
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="https://pbs.twimg.com/profile_images/431261622527488000/AmHJxQ8j.jpeg" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Rachel Green</p>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="http://40.media.tumblr.com/d20908aedeec1870fe11c3811e16a822/tumblr_inline_noqetuRzfx1rxv83w_400.jpg" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Richard</p>
       </div>
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="https://pbs.twimg.com/profile_images/2571856385/image.jpg" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Monica Geller</p>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="http://vignette3.wikia.nocookie.net/friends/images/1/13/Heckles.jpg/revision/latest?cb=20080728201155" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Mr. Heckles</p>
       </div>
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="http://images5.fanpop.com/image/photos/31400000/Phoebe-Buffay-phoebe-buffay-31435075-685-480.jpg" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Phoebe Buffay</p>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="http://cdn.sheknows.com/articles/2015/01/ben.gif" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Ben</p>
       </div>
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="http://www.fm104.ie/getmedia/aabeebb9-9815-45db-bab9-cc787f059b86/33-of-the-most-memorable-ross-geller-moments-on-friends-34.jpg" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Ross Geller</p>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="https://41.media.tumblr.com/tumblr_lzeylaiimu1qg4nvko1_500.jpg" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Emily</p>
       </div>
-    </div> <!-- end row -->
+      <div class = "col-md-2">
+      <img data-clickable = "true" src="http://fr.web.img3.acsta.net/r_x_600/newsv7/14/09/22/09/27/0262430.jpg" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Mike</p>
+      </div>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="http://legendsrevealed.com/entertainment/wp-content/uploads/2015/09/friends-elizabeth.jpg" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Elizabeth</p>
+      </div>
+    </div> <!-- end 2nd row -->
     <div class = "row">
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="http://images5.fanpop.com/image/photos/30700000/Chandler-Bing-chandler-bing-30704004-644-444.png" class = "img-circle count-click img-responsive circle">
-        <p class = "text-center">Chandler Bing</p>
+      <div class="col-md-4"></div>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="http://vignette2.wikia.nocookie.net/friends/images/a/a3/Paul.jpg/revision/latest?cb=20080901194059" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Paul</p>
       </div>
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="https://cdn1.lockerdome.com/uploads/e0a6d00c20355ddf9e80f4eec0299d482843bff2ce470143cf386a7863cbd0a0_large" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Joey Tribbiani</p>
+      <div class = "col-md-2">
+        <img data-clickable = "true" src="https://chitownstarconnections.files.wordpress.com/2012/05/julie-on-friends-lauren-tom.jpg?w=640" class = "img-circle count-click img-responsive center-block" width="115px">
+        <p class = "text-center smaller-font">Julie</p>
       </div>
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="http://i2.wp.com/okmagazine.com/wp-content/uploads/2014/09/gunther-friends-best-quotes.jpg" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Gunther</p>
-      </div>
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="http://showbizgeek.com/wp-content/uploads/2013/01/jack-geller.jpg" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Jack Geller</p>
-      </div>
-    </div> <!-- end row -->
-    <div class = "row">
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="http://braindamaged.fr/wp-content/uploads/2014/05/Judy_Geller_Friends.jpg" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Judy Geller</p>
-      </div>
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="http://i0.wp.com/www.readyfor.tv/wp-content/uploads/2015/01/bonus.jpg" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Janice</p>
-      </div>
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="http://www.wearysloth.com/Gallery/ActorsS/tve15906-19950928-444.jpg" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Carol Willick</p>
-      </div>
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="http://www.wearysloth.com/Gallery/ActorsH/tve7753-19950112-444.jpg" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Susan Bunch</p>
-      </div>
-    </div> <!-- end row -->
-    <div class = "row">
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="http://40.media.tumblr.com/d20908aedeec1870fe11c3811e16a822/tumblr_inline_noqetuRzfx1rxv83w_400.jpg" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Dr. Richard Burke</p>
-      </div>
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="http://vignette3.wikia.nocookie.net/friends/images/1/13/Heckles.jpg/revision/latest?cb=20080728201155" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Mr. Heckles</p>
-      </div>
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="http://cdn.sheknows.com/articles/2015/01/ben.gif" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Ben Geller</p>
-      </div>
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="https://41.media.tumblr.com/tumblr_lzeylaiimu1qg4nvko1_500.jpg" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Emily Waltham</p>
-      </div>
-    </div> <!-- end row -->
-    <div class = "row-fluid">
-      <div class = "col-md-3">
-      <img data-clickable = "true" src="http://fr.web.img3.acsta.net/r_x_600/newsv7/14/09/22/09/27/0262430.jpg" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Mike Hannigan</p>
-      </div>
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="http://legendsrevealed.com/entertainment/wp-content/uploads/2015/09/friends-elizabeth.jpg" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Elizabeth Stevens</p>
-      </div>
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="http://vignette2.wikia.nocookie.net/friends/images/a/a3/Paul.jpg/revision/latest?cb=20080901194059" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Paul Stevens</p>
-      </div>
-      <div class = "col-md-3">
-        <img data-clickable = "true" src="https://chitownstarconnections.files.wordpress.com/2012/05/julie-on-friends-lauren-tom.jpg?w=640" class = "img-circle count-click img-responsive">
-        <p class = "text-center">Julie</p>
-      </div>
-    </div> <!-- end row -->
+      <div class="col-md-4"></div>
+    </div> <!-- end 3rd row -->
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
