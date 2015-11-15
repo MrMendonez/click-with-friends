@@ -1,17 +1,18 @@
-// scripts for click with friends game
+// scripts for Click With Friends game
 
 var decTimer;
+var secondsLeft = 3;
+var count = 0;
+var clickableImages = document.getElementsByClassName("count-click");
 
+// Start countdown by clicking on start button:
+document.getElementById("startButton").addEventListener("click", startTimer);
+
+// Sets countdown to decrease by 1 every second
 function startTimer(){
   decTimer = setInterval(timer, 1000);
 };
 
-document.getElementById("startButton").addEventListener("click", startTimer);
-
-var secondsLeft = 20;
-
-var count = 0
-var clickableImages = document.getElementsByClassName("count-click");
 
 function timer() {
   if(secondsLeft > 0) {
@@ -19,10 +20,22 @@ function timer() {
   } else {
       document.getElementById("timeLine").innerHTML = "Your time is up.";
       document.getElementById("timeLine").className = "change";
-      alert("Congratulations! You click " + count + " characters!");
+      gameOver();
       clearInterval(decTimer);
   }
-}
+};
+
+function gameOver() {
+  if (count === 20) {
+    alert("You clicked all " + count + " characters! You won! Congratulations!")
+  } else if (count === 0) {
+    alert("You didn't click any charcters. You need to click on all 20 characters. You lose!")
+  } else if (count === 1) {
+    alert("You clicked " + count + " character. You need to click on 19 more. You lose!")
+  } else {
+    alert("You clicked on " + count + " characters. You need to click on " + (20 - count) + " more. You lose!")
+  }
+};
 
 function counter() {
   if (this.getAttribute('data-clickable') == 'true') {
@@ -30,36 +43,8 @@ function counter() {
     this.setAttribute('data-clickable', 'false');
   }
   document.getElementById("clickTotal").innerHTML = count;
-}
+};
 
 for(i = 0; i < clickableImages.length; i++) {
   clickableImages[i].addEventListener("click", counter); 
-}
-
-  
-
-// from shamoon's demo
-
-// var secondsCount = 0;
-// var timerInterval;
-// var toggleBtn = document.getElementById("toggleBtn");
-
-// setTimeout(function() {
-//   toggleBtn.parentNode.removeChild(toggleBtn);
-//   alert("You need to playfast!");
-// }, 15000);
-
-// function addSeconds() {
-//   secondsCount++;
-// }
-
-// function toggleTime()  {
-//   if(this.getAttribute("data-slate") === "start") {
-//     this.innerHTML = "Stop";
-//     this.setAttribute("data-state", "stop");
-//     secondsCount = 0;
-//     timerInterval = setInterval(addSeconds, 1000);
-//   } else {
-
-//   }
-// }
+};
