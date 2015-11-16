@@ -12,7 +12,8 @@ function startTimer(){
   decTimer = setInterval(timer, 1000);
   for (var i = 0; i < clickableImages.length; i++) {
     clickableImages[i].setAttribute("data-clickable", "true");
-    document.getElementById("startButton").setAttribute("class", "btn btn-danger btn-block center-block");
+    // removed button turning red until I can figure out how tom make it stop the game once it is clicked again.
+    // document.getElementById("startButton").setAttribute("class", "btn btn-danger btn-block center-block");
   }
 };
 
@@ -33,7 +34,7 @@ function timer() {
 function gameOver() {
   alert("Your time is up!");
   if (count === 0) {
-    alert("You didn't click any charcters. You needed to click on all 20 characters. You lose!")
+    alert("You didn't click any characters. You needed to click on all 20 characters. You lose!")
   } else if (count === 1) {
     alert("You clicked " + count + " character. You need 19 more. You lose!")
   } else {
