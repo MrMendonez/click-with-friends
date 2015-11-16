@@ -12,3 +12,7 @@ background-color: #FFFAD5;
 .smaller-font {
   font-size: 150%;
 }
+
+.dimmed {
+  opacity: 0.6;
+}

@@ -54,6 +54,7 @@ function counter() {
   if (this.getAttribute('data-clickable') === 'true') {
     count++;
     this.setAttribute('data-clickable', 'false');
+    this.className = "img-circle count-click img-responsive center-block dimmed";
   }
   document.getElementById("clickTotal").innerHTML = count;
   if (count === 20) {
