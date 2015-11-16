@@ -4,6 +4,8 @@ var decTimer;
 var secondsLeft = 20;
 var count = 0;
 var clickableImages = document.getElementsByClassName("count-click");
+// is it ok to use a variable name that is the same name as the id? Ask Shamoon.
+var startButton = document.getElementById("startButton");
 
 // TIMER FUNCTIONS
 
@@ -12,13 +14,12 @@ function startTimer(){
   decTimer = setInterval(timer, 1000);
   for (var i = 0; i < clickableImages.length; i++) {
     clickableImages[i].setAttribute("data-clickable", "true");
-    // removed button turning red until I can figure out how tom make it stop the game once it is clicked again.
-    // document.getElementById("startButton").setAttribute("class", "btn btn-danger btn-block center-block");
+    startButton.setAttribute("class", "btn btn-danger btn-block center-block");
   }
 };
 
 // Anonymous Function/Event Listener - Start countdown by clicking on start button:
-document.getElementById("startButton").addEventListener("click", startTimer);
+startButton.addEventListener("click", startTimer);
 
 // Shows the countdown on the page. When countdown ends it initiates game over sequence
 function timer() {
