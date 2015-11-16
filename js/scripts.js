@@ -1,4 +1,6 @@
-// scripts for Click With Friends game
+// Scripts for Click With Friends game
+
+//GLOBAL VARIABLES
 
 var decTimer;
 var secondsLeft = 20;
