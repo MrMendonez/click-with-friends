@@ -57,7 +57,7 @@ function counter() {
   }
   document.getElementById("clickTotal").innerHTML = count;
   if (count === 20) {
-    alert("You clicked all " + count + " characters " + (20 - secondsLeft) + " seconds! You won! Congratulations! =)")
+    alert("You clicked all " + count + " characters in " + (20 - secondsLeft) + " seconds! You won! Congratulations! =)")
     alert("Now, can you do it faster?")
     clearInterval(decTimer);
     location.reload();
