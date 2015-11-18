@@ -6,7 +6,6 @@ var decTimer;
 var secondsLeft = 20;
 var count = 0;
 var clickableImages = document.getElementsByClassName("count-click");
-// is it ok to use a variable name that is the same name as the id? Ask Shamoon.
 var startButton = document.getElementById("startButton");
 
 // TIMER FUNCTIONS
@@ -58,7 +57,7 @@ function counter() {
   }
   document.getElementById("clickTotal").innerHTML = count;
   if (count === 20) {
-    alert("You clicked all " + count + " characters with " + secondsLeft + " seconds left to spare! You won! Congratulations! =)")
+    alert("You clicked all " + count + " characters " + (20 - secondsLeft) + " seconds! You won! Congratulations! =)")
     alert("Now, can you do it faster?")
     clearInterval(decTimer);
     location.reload();

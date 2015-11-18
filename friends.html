@@ -4,14 +4,24 @@
   <title>Click with Friends</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <a class="navbar-brand" href="#" target="blank">C&middot;L&middot;I&middot;C&middot;K W&middot;I&middot;T&middot;H F&middot;R&middot;I&middot;E&middot;N&middot;D&middot;S</a>
+        <div class = "collapse navbar-collapse  navHeaderCollapse">
+            <ul class = "nav navbar-nav navbar-right">
+                <li><a href = "#contact" data-toggle="modal">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
   <header class="container">
     <div class-"row">
       <div class="col-md-1"></div>
       <div class = "col-md-4">
-        <br />
         <h1 class = "text-center">C&middot;L&middot;I&middot;C&middot;K W&middot;I&middot;T&middot;H</h1>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Friends_logo.svg/1000px-Friends_logo.svg.png" width = "300px" class = "img-responsive center-block">
         <p class = "text-center smaller-font">You have 20 seconds to click as many Friends' characters as you can!</p>
@@ -124,6 +134,47 @@
       <div class="col-md-4"></div>
     </div> <!-- end 3rd row -->
   </main>
+  <footer id ="footer" class="navbar navbar-inverse navbar-static-bottom">
+    <div class ="container">
+      <a class="navbar-brand" href="https://frightening-wizard-3651.herokuapp.com/" target="blank">Apps by Darryl</a>
+      <div class="collapse navbar-collapse navHeaderCollapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://www.linkedin.com/in/darrylmendonez" target="blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/MrMendonez" target="blank"><i class="fa fa-github"></i></a></li>
+          <li><a href="http://stackoverflow.com/users/5458425/darryl-mendonez?tab=profile" target="blank"><i class="fa fa-stack-overflow"></i></a></li>
+          <li><a href="https://www.twitter.com/MrMendonez" target="blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCOCFwUF--91YYR0fMOPzfSQ/videos" target="blank"><i class="fa fa-youtube-play"></i></a></li>
+          <li><a href ="https://plus.google.com/+DarrylMendonez/about" target="blank"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href ="mailto:darrylmendonez@gmail.com"><i class="fa fa-envelope"></i></a></li>
+          <li><a href="https://frightening-wizard-3651.herokuapp.com/" target="blank"><i class="fa fa-user"></i></a></li>
+        </ul>
+      </div> <!-- end collapse navbar-collapse navHeaderCollapse -->
+    </div> <!-- end container -->
+  </footer>
+  <aside class = "modal fade" id = "contact" role = "dialog">
+    <div class = "modal-dialog">
+      <div class = "modal-content">
+        <div class = "modal-header">
+          <h4>Contact</h4>
+        </div>
+        <div class = "modal-body">
+          <ul class="list-inline">
+            <li><a href="https://www.linkedin.com/in/darrylmendonez" target="blank" class="btn btn-linkedin"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/MrMendonez" target="blank" class="btn btn-github"><i class="fa fa-github"></i></a></li>
+            <li><a href="http://stackoverflow.com/users/5458425/darryl-mendonez?tab=profile" target="blank" class="btn btn-stackoverflow"><i class="fa fa-stack-overflow"></i></a></li>
+            <li><a href="https://www.twitter.com/MrMendonez" target="blank" class = "btn btn-twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCOCFwUF--91YYR0fMOPzfSQ/videos" target="blank" class="btn btn-youtube"><i class="fa fa-youtube-play"></i></a></li>
+            <li><a href ="https://plus.google.com/+DarrylMendonez/about" target="blank" class="btn btn-google-plus"><i class="fa fa-google-plus"></i></a></li>
+            <li class="u-email"><a href ="mailto:darrylmendonez@gmail.com" class = "btn btn-email"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="https://frightening-wizard-3651.herokuapp.com/" target="blank" class = "btn btn-success"><i class="fa fa-user"></i></a></li>
+          </ul>
+        </div>
+        <div class = "modal-footer">
+          <a class = "btn btn-default" data-dismiss = "modal">Close</a>
+        </div>
+      </div>
+    </div>
+  </aside>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
   <script src = "js/scripts.js"></script>
