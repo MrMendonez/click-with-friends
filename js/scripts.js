@@ -47,6 +47,12 @@ function gameOver() {
 
 // CLICK COUNTER FUNCTIONS
 
+// Anonymous Function/Event Listener - when player clicks on character 
+// counter function is engaged.
+for (i = 0; i < clickableImages.length; i++) {
+  clickableImages[i].addEventListener("click", counter); 
+};
+
 // Increase click count when player clicks on each character and
 // engages win message if player wins.
 function counter() {
@@ -62,10 +68,4 @@ function counter() {
     clearInterval(decTimer);
     location.reload();
   }
-};
-
-// Anonymous Function/Event Listener - when player clicks on character 
-// counter function is engaged.
-for(i = 0; i < clickableImages.length; i++) {
-  clickableImages[i].addEventListener("click", counter); 
 };
