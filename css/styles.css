@@ -5,6 +5,13 @@ font-family: 'Shadows Into Light', cursive;
 background-color: #FFFAD5;
 }
 
+#verify{
+  background-color: white;
+  position: fixed;
+  right: 0%;
+  bottom: 0%;
+}
+
 .larger-font {
   font-size: 200%;
 }
